@@ -66,7 +66,7 @@ export default function useFetchJobs(params, page) {
       .then((res) => {
         dispatch({
           type: ACTIONS.UPDATE_HAS_NEXT_PAGE,
-          payload: { hasNextPage: res.data.legnth !== 0 },
+          payload: { hasNextPage: res.data.length !== 0 },
         });
       })
       .catch((err) => {
